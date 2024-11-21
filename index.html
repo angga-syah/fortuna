@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting Service - E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Consulting Service</h1>
+        <p>Professional consulting for your business needs.</p>
+    </header>
+    
+    <main>
+        <section class="product">
+            <h2>Service Package: Consulting</h2>
+            <p class="price">Price: IDR 2,000,000</p>
+            <p>Our consulting services help you strategize and optimize your business operations.</p>
+        </section>
+        
+        <form class="payment-form" action="https://sandbox.paymentgateway.com/process" method="POST">
+            <input type="hidden" name="item_name" value="Consulting Service">
+            <input type="hidden" name="amount" value="2000000">
+            <input type="hidden" name="currency" value="IDR">
+
+            <label for="payment-method">Choose Payment Method:</label>
+            <select id="payment-method" name="payment_method" required>
+                <option value="visa">VISA</option>
+                <option value="mastercard">MasterCard</option>
+            </select>
+
+            <button type="submit" class="pay-button">Pay Now</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>© 2024 Consulting Service. All rights reserved.</p>
+    </footer>
+</body>
+</html>
