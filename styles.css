@@ -1,3 +1,4 @@
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,6 +14,30 @@ header {
     padding: 20px;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -21,12 +46,20 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.product {
-    text-align: center;
+.services-list {
+    list-style: none;
+    padding: 0;
 }
 
-.product .price {
-    font-size: 1.5em;
+.services-list li {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.price {
+    font-size: 1.2em;
     color: #4CAF50;
 }
 
@@ -35,34 +68,17 @@ main {
     flex-direction: column;
     gap: 15px;
     margin-top: 20px;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.payment-form label,
-.payment-form select,
-.payment-form button {
-    font-size: 1em;
 }
 
 .pay-button {
-    padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .pay-button:hover {
     background-color: #45a049;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    margin-top: 20px;
 }

@@ -3,37 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortuna-Consulting Service</title>
+    <title>Fortuna Sada Nioga - Payment</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Consulting Service</h1>
-        <p>Professional consulting for your business needs.</p>
+        <h1>Consulting Services</h1>
+        <p>Your trusted partner for professional consulting.</p>
     </header>
-    
-    <main>
-        <section class="product">
-            <h2>Service Package: Consulting</h2>
-            <p class="price">Price: IDR 2,000,000</p>
-            <p>Our consulting services help you strategize and optimize your business operations.</p>
-        </section>
-        
-        <form class="payment-form" action="https://sandbox.paymentgateway.com/process" method="POST">
-            <input type="hidden" name="item_name" value="Consulting Service">
-            <input type="hidden" name="amount" value="2000000">
-            <input type="hidden" name="currency" value="IDR">
 
-            <label for="payment-method">Choose Payment Method:</label>
-            <select id="payment-method" name="payment_method" required>
-                <option value="visa">VISA and MasterCard</option>
-            </select>
-            <button type="submit" class="pay-button">Pay Now</button>
-        </form>
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#terms">Terms & Conditions</a></li>
+            <li><a href="#refund">Refund Policy</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Section: Services -->
+        <section id="services" class="services-section">
+            <h2>Our Services</h2>
+            <p>We offer professional consulting services for individuals and businesses in need of assistance with immigration and permits.</p>
+
+            <ul class="services-list">
+                <li>
+                    <h3>General Consulting</h3>
+                    <p>Professional consulting for various business and personal needs.</p>
+                    <p class="price">Price: IDR 2,000,000</p>
+                </li>
+                <li>
+                    <h3>Visa Consulting</h3>
+                    <p>Guidance and support for visa applications and extensions.</p>
+                    <p class="price">Price: IDR 2,500,000</p>
+                </li>
+                <li>
+                    <h3>ITAS & ITAP Consulting</h3>
+                    <p>Comprehensive consulting for Temporary Stay Permits (ITAS) and Permanent Stay Permits (ITAP).</p>
+                    <p class="price">Price: IDR 3,000,000</p>
+                </li>
+                <li>
+                    <h3>Working Permit</h3>
+                    <p>Professional assistance with obtaining work permits for foreign employees.</p>
+                    <p class="price">Price: IDR 3,500,000</p>
+                </li>
+                <li>
+                    <h3>RPTKA Consulting</h3>
+                    <p>Consulting for preparing and managing RPTKA (Foreign Manpower Utilization Plan).</p>
+                    <p class="price">Price: IDR 4,000,000</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section: Payment -->
+        <section class="payment-section">
+            <h2>Make a Payment</h2>
+            <form class="payment-form" action="https://sandbox.paymentgateway.com/process" method="POST">
+                <label for="service">Choose Service:</label>
+                <select id="service" name="service" required>
+                    <option value="consulting">General Consulting - IDR 2,000,000</option>
+                    <option value="visa">Visa Consulting - IDR 2,500,000</option>
+                    <option value="itas-itap">ITAS & ITAP Consulting - IDR 3,000,000</option>
+                    <option value="working-permit">Working Permit - IDR 3,500,000</option>
+                    <option value="rptka">RPTKA Consulting - IDR 4,000,000</option>
+                </select>
+
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment_method" required>
+                    <option value="visa">VISA</option>
+                    <option value="mastercard">MasterCard</option>
+                </select>
+
+                <button type="submit" class="pay-button">Pay Now</button>
+            </form>
+        </section>
+
+        <!-- Section: Terms & Conditions -->
+        <section id="terms" class="terms-section">
+            <h2>Terms & Conditions</h2>
+            <p>By purchasing our consulting services, you agree to the following:</p>
+            <ul>
+                <li>Services are non-transferable.</li>
+                <li>Consulting sessions must be scheduled at least 3 days in advance.</li>
+                <li>Prices are subject to change without prior notice.</li>
+            </ul>
+        </section>
+
+        <!-- Section: Refund Policy -->
+        <section id="refund" class="refund-section">
+            <h2>Refund Policy</h2>
+            <p>Refunds are only available under the following conditions:</p>
+            <ul>
+                <li>Cancellation requests made within 24 hours of purchase.</li>
+                <li>Refunds are processed within 7 working days.</li>
+                <li>No refunds for completed consulting sessions.</li>
+            </ul>
+        </section>
+
+        <!-- Section: Contact -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>For more information, reach out to us:</p>
+            <p>Email: info@fortunasadanioga.com</p>
+            <p>Phone: +62 2282 4741</p>
+        </section>
     </main>
-    
+
     <footer>
-        <p>© 2024 Fortuna. All rights reserved.</p>
+        <p>© 2024 Fortuna Sada Nioga. All rights reserved.</p>
     </footer>
 </body>
 </html>
