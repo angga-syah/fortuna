@@ -379,8 +379,8 @@ td:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 560px;
-    height: 622px;
+    width: 500px;
+    height: 500px;
     text-decoration: none;
     color: white;
     background-color: #388E3C;
